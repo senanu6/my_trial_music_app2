@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>MY SIMPLE MUSIC APP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<audio id="audio1">
+ <source src="Regine_Velasquez.mp3" type="audio/mpeg">
+ </audio>
+
+<div class="rectangle">
+<img class="image" src="image61.jpg" alt="test road sign"</img>
+
+<button class="button1"  onclick="playAudio()" type="button">PLAY</button>
+<button class="button2"  onclick="pauseAudio()" type="button">PAUSE</button>
+<button class="button3"  onclick="stopAudio()" type="button">STOP</button>
+</div>
+
+<script>
+
+ var z = document.getElementById("audio1");
+
+function playAudio() {
+z.play();
+}
+
+function pauseAudio() {
+z.pause();
+}
+
+function stopAudio() {
+z.pause();
+z.currentTime = 0;
+}
+
+</script>
+
+</body>
+</html>
+
